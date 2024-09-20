@@ -1,4 +1,8 @@
 <?php
+header('Access-Control-Allow-Origin: *');
+header('Content-Type: application/json');
+
+// Your response data
 $response = array(
     "status" => "success",
     "message" => "Data retrieved successfully.",
@@ -8,6 +12,5 @@ $response = array(
     )
 );
 
-header('Content-Type: application/json');
 echo json_encode($response);
 ?>
